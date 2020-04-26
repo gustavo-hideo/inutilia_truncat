@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css?family=Proxima+Soft|PT+Sans|Maven+Pro&display=swap');
+
+
+html {
+    font-family: "Maven Pro";
+    margin:30px 275px 30px 275px;
+    font-size:20px;
+}
+
+h1 {
+    font-weight:normal;
+}
+
+h3 {
+    font-weight:normal;
+}
+
+li {
+    float:left;
+    display:inline;
+}
+
+p {
+    margin:0;
+    font-size:15px;
+}
+
+figcaption {
+    font-size:11px;
+}
+
+.header {
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.top {
+    font-size:15px;
+    display:block;
+    text-align:center;
+    padding:25px 15px 50px 15px;
+    text-decoration:none;
+    color:#212122;
+    font-weight: normal;
+}
+
+.top a:hover {
+    /*background-color:#212122;
+    color:white;*/
+    font-weight: bold;
+}
+
+.table {
+    display: table;
+    margin: 0 auto;
+}
+
+.topics {
+    text-decoration: none;
+    color: #000000;
+    font-weight: normal;
+    text-align: center;
+    margin:auto;
+    padding:0 0 70px 0;
+}
+
+.date {
+    padding:30px 0 0 0;
+    font-size:13px;
+    margin:0;
+    padding: 0 10px 0;
+}
+
+.topics a:hover {
+    font-weight:bold;
+}
+
+.column {
+    float:left;
+    width:42%;
+    padding:30px 35px 30px 35px;
+}
+
+.page_j {
+    font-weight: bold;
+    color:#CF0101;
+}
+
+.page_g {
+    font-weight: bold;
+    color:#03A107;
+}
+
+.page_t {
+    font-weight: bold;
+    color:#663300;
+}
+
+.page_f {
+    font-weight: bold;
+    color:#e6e600;
+}
+
+.page_p {
+    font-weight: bold;
+    color:#0305AF;
+}
+
+.label_j {
+    font-size:13px;
+    margin:0;
+    color:#CF0101;
+}
+
+.label_g {
+    font-size:13px;
+    margin:0;
+    color:#03A107;
+}
+
+.label_t {
+    font-size:13px;
+    margin:0;
+    color:#663300;
+}
+
+.label_f {
+    font-size:13px;
+    margin:0;
+    color:#e6e600;
+}
+
+.label_p {
+    font-size:13px;
+    margin:0;
+    color:#0305AF;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 40px;
+    font-size: 35px;
+}
+
+.subtitle {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.img {
+    text-align: center;
+}
+
+.author_imag {
+    float: left;
+}
+
+.writtenby {
+    font-size: 12px;
+}
+
+.author {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.author_desc {
+    font-size: 12px;
+
+}
+
+.ref {
+    font-size:8px;
+}
+
+.ref_title {
+    font-weight: bold;
+}
+
+#subt {
+    font-size:15px;
+    justify-content:center;
+    text-align:center;
+    margin-bottom:0;
+    display:block;
+}
+
+/* Removing menu button from desktop */
+/* #subt {display:none;} */
+#myNav {display:none;}
+#menu {display:none;}
+
+
+ /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+ @media screen and (max-width: 1024px) {
+
+    /* Including menu button to mobile device */
+    #myNav {display: block;}
+    #menu {display:block;}
+
+    .table .top {
+        display:none;
+    }
+    
+    html {
+        margin:3px;
+    }
+
+        /* The Overlay (background) */
+    .overlay {
+        /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+        height: 100%;
+        width: 0;
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        background-color: rgb(0,0,0); /* Black fallback color */
+        background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+        overflow-x: hidden; /* Disable horizontal scroll */
+        transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    }
+    
+    /* Position the content inside the overlay */
+    .overlay-content {
+        position: relative;
+        top: 25%; /* 25% from the top */
+        width: 100%; /* 100% width */
+        text-align: center; /* Centered text/links */
+        margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    }
+    
+    /* The navigation links inside the overlay */
+    .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #818181;
+        display: block; /* Display block instead of inline */
+        transition: 0.3s; /* Transition effects on hover (color) */
+    }
+    
+    /* When you mouse over the navigation links, change their color */
+    .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+    }
+    
+    /* Position the close button (top right corner) */
+    .overlay .closebtn {
+        position: absolute;
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+    
+
+}
+    
